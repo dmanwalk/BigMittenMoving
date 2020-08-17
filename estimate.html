@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<head>
+    <meta name="description" content="Calculate a quote for your move!">
+    <meta name="author" content="Damian W">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Big Mitten Movers Quote</title>
+    <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/small-business.css" rel="stylesheet">
+
+</head>
+<html>
+    <body>
+        <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Big Mitten Moving</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="estimate.html">Instant Estimate<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Heading Row -->
+    <div class="row align-items-center my-5">
+      <div class="col-lg-7">
+        <img class="img-fluid rounded mb-4 mb-lg-0" src="images/logo.jpg" alt="Free esitmates!">
+      </div>
+      <!-- /.col-lg-8 -->
+      <div class="col-lg-5">
+        <h1 class="font-weight-light">Big Mitten Moving Instant Estimate</h1>
+        <p>Our instant estimate may not reflect deals or specials and is intended to give you a rough estimate on how much your move could cost. Be sure to call if you would like a more accurate quote!</p>
+        
+      </div>
+      <!-- /.col-md-4 -->
+    </div>
+    <!-- /.row -->
+
+    <!-- Call to Action Well -->
+    <div class="card text-white bg-secondary my-5 py-4 text-center">
+      <div class="card-body">
+        <p class="text-white m-0">We know you have a busy life. Thats why we provide a free rough estimate if you are thinking about moving.</p>
+      </div>
+    </div>
+<h1>Instant Estimate</h1>
+<p>Please fill out the form below to the best of your abilities</p>
+
+<div class="row">
+    <div class="col">
+    <label for="firstName">First Name</label>
+<input type="text" name="first" id="firstName" class="form-control" placeholder="First Name" required>
+</div>
+<div class="col">
+<label for="lastName">Last Name</label>
+<input type="text" name="last" id="lastName" class="form-control" placeholder="Last Name" required>
+</div>
+</div>
+<div class="row">
+    <div class="col">
+    <label for="emailAddress">Email Address</label>
+<input type="email" name="email" id="emailAddress" class="form-control" placeholder="Email Address">
+<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+</div>
+<div class="col">
+<label for="phoneNumber">Phone Number</label>
+<input type="tel" name="phone" id="phoneNumber" class="form-control" placeholder="123-456-7890"required>
+<small id="emailHelp" class="form-text text-muted">We'll never share your phone number with anyone else.</small>
+</div>
+</div>
+<div class="row">
+    <div class="col">
+    <label>Number of Large items (Couch, Large Chairs, Tables, TV Stands,Matteress, ect.)</label>
+<input type="number" min="0" name="large" id="largeItems" class="form-control" value="0">
+    </div>
+<div class="col">
+<label>Number of Small items (Boxs, Drawers, Small Chairs, Single Person Items, ect.) </label>
+<input type="number" min="0" name="small" id="smallItems" class="form-control" value="0">
+</div>
+</div>
+<div class="row">
+    <div class="col">
+    <label>Miles from current Addres to Destination</label>
+    <input type="number" min="0" name="miles" id="mileage" class="form-control" value="0">
+    </div>
+    <div class="col">
+    <label>How many flights of stairs?</label>
+    <input type="number" min="0" name="stairs" id="stairs" value="0" class="form-control">
+</div>
+</div>
+
+<div class="row">
+    <div class="col">
+<button style="margin: 1em;" type="submit" name="submit" id="submit" class="btn btn-primary" onclick="getQuote()">Submit</button>
+</div>
+
+<div class="col" style="margin-top: 1em;">
+</div>
+</div>
+<div class="row">
+    <div class="col">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93816.34414678285!2d-84.6294671203428!3d42.708786355742525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8822c01c7f318c37%3A0x4378b62389029d9e!2sLansing%2C%20MI!5e0!3m2!1sen!2sus!4v1597070296631!5m2!1sen!2sus" class="embed-responsive-item"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</div>
+</div>
+ 
+<break></break>
+<div class="row">
+    <div class="col" style="margin: 2em;">
+<h1>Your Estimate:</h1>
+</div>
+    <div class="col" style="margin: 2em;">
+<h3 id="quote">$0 - $0</h3>
+</div>
+</div>
+</div>
+
+
+ <!-- Footer -->
+ <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Big Mitten Moving 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<script language="JavaScript" type="text/javascript">
+    function getQuote(){
+        large = document.getElementById("largeItems").value;
+        small = document.getElementById("smallItems").value;
+        miles = document.getElementById("mileage").value;
+        first = document.getElementById("firstName").value;
+        last = document.getElementById("lastName").value;
+        stairs = document.getElementById("stairs").value;
+        phoneNumber = document.getElementById("phoneNumber").value;
+        if(!first || !last || !phoneNumber || !large || !small || !mileage || !stairs){
+            alert("Please make sure First Name, Last Name and Phone Number are filled in");
+            return false;
+        }
+        else{
+        
+    
+        var rate,largeTime,smallTime,total,highTotal,mileageRate;
+        total = 0;
+        mileageRate = 1;
+        console.log(large);
+        
+        console.log(small);
+        console.log(19);
+        
+        smallTime = 5;
+        largeTime = 8;
+        if (stairs > 0){
+            smallTime = smallTime *((stairs / 2)+1);
+            largeTime = largeTime *((stairs/2)+1);
+        }
+        total += ((small / 2)* smallTime);
+        total += (large * largeTime);
+        total += (miles * mileageRate);
+        if (total < 180){
+            total = 180
+        }
+        highTotal = total*2;
+        console.log(total);
+        console.log(highTotal);
+        updateQuote(total,highTotal)
+        }
+        /*var para = document.createElement("p");
+        var node = document.createTextNode("Low End: ",total," High End:",highTotal);
+        
+        */
+        
+        //document.write("total",total,"high",highTotal);
+        
+    }
+    function updateQuote(low,high){
+        low = low.toFixed(2)
+        high = high.toFixed(2)
+        document.getElementById("quote").innerHTML = "Between $"+String(low)+" - "+"$"+String(high);
+        
+    }
+    
+</script>
+
+</body>
+</html>
